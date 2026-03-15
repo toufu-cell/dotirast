@@ -1,0 +1,29 @@
+{
+    "name": "dotirast",
+    "version": "0.1.0",
+    "description": "CLI-driven pixel art app with real-time browser rendering",
+    "license": "MIT",
+    "bin": {
+        "dotirast": "./dist/index.js"
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsup",
+        "dev": "tsup --watch"
+    },
+    "dependencies": {
+        "commander": "^14.0.0",
+        "express": "^5.1.0",
+        "express-rate-limit": "^8.3.1",
+        "ws": "^8.18.3"
+    },
+    "devDependencies": {
+        "@types/express": "^5.0.3",
+        "@types/node": "^24.6.0",
+        "@types/ws": "^8.18.1",
+        "tsup": "^8.5.0",
+        "typescript": "^5.9.2"
+    }
+}
